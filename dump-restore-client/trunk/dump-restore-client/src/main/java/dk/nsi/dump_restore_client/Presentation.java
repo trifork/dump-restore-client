@@ -467,6 +467,10 @@ public class Presentation {
         JPanel buttonPanel = new JPanel(new FlowLayout(FlowLayout.LEFT));
         final JCheckBox dateBoolCheck = new JCheckBox("Restore til dags dato");
         dateBoolCheck.setSelected(true);
+        Date today = Calendar.getInstance().getTime();
+        controller.isExecutionDateSet = true;
+        controller.executionDate = today;
+        dateBoolCheck.setForeground(Color.BLACK);
 
         buttonPanel.add(dateBoolCheck);
 
