@@ -1,0 +1,14 @@
+Release 1.0.2 dated 13. November 2015
+- bugfix: client now longer fails on long path elements
+- new feature: client now contains 'reset' functionality
+
+--------------------------------
+Release 1.0.1 dated 3. April 2013
+ - bugfix: long path names are now truncated in GUI
+ - client now fails fast on invalid cpr numbers
+
+--------------------------------
+Release 1.0.0 dated 22. March 2013
+ - initial release
+
+--------------------------------

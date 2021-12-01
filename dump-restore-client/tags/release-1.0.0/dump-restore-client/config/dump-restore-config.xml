@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+  ~ /*
+  ~ * Dump/Restore client - Copyright (C) 2013 National Board of e-Health (NSI)
+  ~ *
+  ~ * All source code and information supplied as part of <Komponent-Navn> is
+  ~ * copyright to National Board of e-Health.
+  ~ *
+  ~ * The source code has been released under a dual license - meaning you can
+  ~ * use either licensed version of the library with your code.
+  ~ *
+  ~ * It is released under the Common Public License 1.0, a copy of which can
+  ~ * be found at the link below.
+  ~ * http://www.opensource.org/licenses/cpl1.0.php
+  ~ *
+  ~ * It is released under the LGPL (GNU Lesser General Public License), either
+  ~ * version 2.1 of the License, or (at your option) any later version. A copy
+  ~ * of which can be found at the link below.
+  ~ * http://www.gnu.org/copyleft/lesser.html
+  ~ *
+  ~ * $HeadURL$
+  ~ * $Id$
+  ~ */
+  -->
+<config>
+    <environments>
+        <environment>TEST1</environment>
+        <environment>TEST2</environment>
+        <environment>UDD</environment>
+        <environment>ProdTest</environment>
+    </environments>
+    <services>
+        <service name="FMK">
+            <endpoint environment="TEST1">http://test1.fmk.netic.dk/fmk12/ws/DumpRestore</endpoint>
+            <endpoint environment="TEST2">http://test2.fmk.netic.dk/fmk12/ws/DumpRestore</endpoint>
+            <endpoint environment="UDD">http://udd.fmk.netic.dk/fmk12/ws/DumpRestore</endpoint>
+            <endpoint environment="ProdTest">http://prodtest.fmk.netic.dk/fmk12/ws/DumpRestore</endpoint>
+        </service>
+    </services>
+    <cpr-whitelist>
+        Angiv-din-organisations-liste-af-tildelte-CPR-numre-adskilt-med-whitespace-(newline,-tab-etc)-i-konfigurationsfilen
+    </cpr-whitelist>
+</config>
