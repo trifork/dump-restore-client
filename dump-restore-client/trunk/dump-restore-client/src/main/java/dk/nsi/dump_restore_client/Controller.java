@@ -89,7 +89,7 @@ public class Controller {
         int numberOfErrors = 0;
         for (String sourceCpr : sourceCprs) {
             log.info("Starter reset af '" + sourceCpr + "'");
-            List<String> services = staticConfig.getServices();
+            List<String> services = staticConfig.getSelectedServices();
             for (String service : services) {
                 boolean error = resetCprPairAndService(source, sourceCpr, service);
                 if (error) numberOfErrors++;
