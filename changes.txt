@@ -1,4 +1,4 @@
-Release 1.0.7 dated ??
+Release 1.0.7 dated 2. December 2021
 - fixed date shifting checkmark
 - reset now only affects selected systems
 
